@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Seu Mecânico</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <a href="#" class="logo">
+          <img width="150" height="100" src="./img/logo-2.jpeg" alt="logo" />
+        </a>
+
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#about">Sobre</a>
+          <a href="#menu">Menu</a>
+          <a href="#review">Avaliações</a>
+          <a href="#address">Endereço</a>
+        </nav>
+
+        <div class="icons">
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png"
+            alt="search--v1"
+          />
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png"
+            alt="shopping-cart--v1"
+          />
+        </div>
+      </section>
+    </header>
+
+    <div class="home-container">
+      <section id="#home">
+        <div class="content">
+          <h3>Tudo sobre a troca de óleo do seu veículo</h3>
+          <p>
+            <strong>
+              realizar uma troca correta, de qualidade, contribui não só para um
+              melhor desempenho do carro, como também aumenta a própria vida
+              útil do seu motor.
+            </strong>
+          </p>
+        </div>
+      </section>
+    </div>
+    <section class="about" id="about">
+      <h2 class="title">Sobre <span>Nós</span></h2>
+      <div class="row">
+        <div class="container-image">
+          <img src="./img/Troca-de-Oleo-do-Carro.jpg" alt="sobre-nos" />
+        </div>
+        <div class="content">
+          <h3>Somos especialistas nessa função</h3>
+          <p>
+            <strong>
+              Um bom profissional para a troca de óleo do motor deve ter algumas
+              características essenciais para garantir um serviço de qualidade e
+              a longevidade do seu veículo. Deve ter um bom entendimento sobre
+              os diferentes tipos de óleo e suas especificações, além de saber
+              qual é o mais adequado para cada tipo de motor.
+            </strong>
+          </p>
+          <p>
+            <strong>
+              A experiência prática é fundamental. Um profissional experiente
+              saberá identificar rapidamente quaisquer problemas potenciais
+              durante a troca de óleo. Deve ser detalhista para garantir que
+              todos os procedimentos sejam seguidos corretamente, como a remoção
+              do óleo antigo, substituição dos filtros e aplicação do novo óleo
+              na quantidade correta.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <h2 class="title">Nosso <span>Serviço</span></h2>
+
+      <div class="box-container">
+        <!-- Item 1 -->
+        <div class="box">
+          <img
+            src="/img/Troca-de-Oleo-do-Carro.jpg"
+            alt="Troca de Óleo 1"
+            class="image"
+          />
+          <h3 class="title">Troca De Óleo</h3>
+          <button class="btn" onclick="toggleInfo(1)">Saiba Mais</button>
+          <div id="info1" class="info" style="display: none">
+            <p></p>
+            <p>
+              Trocar o óleo com frequência é fundamental para o bom
+              funcionamento de qualquer veículo, seja ele moto, carro ou
+              caminhão. O óleo é responsável pela lubrificação e proteção das
+              partes móveis, reduzindo o atrito e evitando o desgaste das peças
+              do motor antes do tempo.
+            </p>
+            <p>
+              Além de prevenir o desgaste, o óleo também cumpre um papel
+              importante de controlar o calor gerado pelo motor, sem que este
+              passe para os demais sistemas. Com tantas funções, é fundamental
+              que o motorista tenha total cuidado e faça a troca do óleo
+              respeitando a frequência indicada.
+            </p>
+            <button class="btn-close" onclick="toggleInfo(1)">Fechar</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="box">
+          <img
+            src="/img/troca-filtro-oleo.jpg"
+            alt="Troca de Óleo 2"
+            class="image"
+          />
+          <h3 class="title">Filtro de Óleo</h3>
+          <button class="btn" onclick="toggleInfo(2)">Saiba Mais</button>
+          <div id="info2" class="info" style="display: none">
+            <p>
+              Um dos componentes mais importantes de um automóvel é o filtro de
+              óleo, ele garante a saúde do motor. Sua função é evitar que
+              detritos, impurezas ou partículas sólidas de um fluido danifiquem
+              ou diminuam a vida útil de todas as peças do motor, ele serve como
+              uma barreira, um filtro propriamente dito.
+            </p>
+            <p>
+              Se não substituir o filtro de óleo do motor, o novo lubrificante
+              será contaminado pelo fluido velho. Este óleo vencido já não
+              oferece as mesmas propriedades e para piorar os resíduos que
+              circulam pelo bloco e comprometem a lubrificação adequada de peças
+              como anéis, pistões, bielas e mancais
+            </p>
+            <button class="btn-close" onclick="toggleInfo(2)">Fechar</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="box">
+          <img
+            src="/img/troca-filtro-ar2.jpeg"
+            alt="Troca de Óleo 3"
+            class="image"
+          />
+          <h3 class="title">Filtro de Ar</h3>
+          <button class="btn" onclick="toggleInfo(3)">Saiba Mais</button>
+          <div id="info3" class="info" style="display: none">
+            <p>
+              O filtro de ar em um automóvel desempenha um papel crucial na
+              manutenção do desempenho e da eficiência do motor. Manter o filtro
+              de ar limpo e substituí-lo regularmente é uma parte importante da
+              manutenção do veículo. Isso ajuda a garantir que o motor funcione
+              de maneira eficiente e econômica.
+            </p>
+            <p>
+              O filtro de ar é essencial para proteger o motor contra poeira e
+              detritos, melhorar a eficiência de combustível, otimizar o
+              desempenho do motor, reduzir emissões e prolongar a vida útil do
+              motor. Manter o filtro limpo é crucial para o bom funcionamento do
+              veículo.
+            </p>
+            <button class="btn-close" onclick="toggleInfo(3)">Fechar</button>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="box">
+          <img src="/img/filtro 3.jpg" alt="Troca de Óleo 4" class="image" />
+          <h3 class="title">Filtro de Combustível</h3>
+          <button class="btn" onclick="toggleInfo(4)">Saiba Mais</button>
+          <div id="info4" class="info" style="display: none">
+            <p>
+              O filtro de combustível é fundamental para o funcionamento
+              eficiente e seguro de um automóvel. Trocar o filtro de combustível
+              regularmente é uma parte importante da manutenção do veículo para
+              garantir seu bom funcionamento e longevidade. O filtro de
+              combustível protege o motor de impurezas, garante um bom
+              desempenho, mantém a eficiência de combustível e previne
+              entupimentos no sistema de combustível. Sua manutenção regular é
+              crucial para o funcionamento e a longevidade do motor.
+            </p>
+            <button class="btn-close" onclick="toggleInfo(4)">Fechar</button>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="box">
+          <img
+            src="/img/Filtro-de-Ar-Condicionado.jpeg"
+            alt="Troca de Óleo 5"
+            class="image"
+          />
+          <h3 class="title">Filtro do Ar Condicionado</h3>
+          <button class="btn" onclick="toggleInfo(5)">Saiba Mais</button>
+          <div id="info5" class="info" style="display: none">
+            <p>
+              Substituir o filtro de ar condicionado regularmente é essencial
+              para manter um ambiente interno saudável e o sistema de ar
+              condicionado funcionando adequadamente. O filtro de ar
+              condicionado melhora a qualidade do ar, protege a saúde dos
+              ocupantes, garante o bom funcionamento do sistema de ar
+              condicionado e previne odores desagradáveis. Trocas regulares são
+              essenciais.
+            </p>
+            <button class="btn-close" onclick="toggleInfo(5)">Fechar</button>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="box">
+          <img
+            src="/img/oleos-lubrificantes.jpg"
+            alt="Troca de Óleo 6"
+            class="image"
+          />
+          <h3 class="title">Tipos de Óleo Lubrificante</h3>
+          <button class="btn" onclick="toggleInfo(6)">Saiba Mais</button>
+          <div id="info6" class="info" style="display: none">
+            <p>
+              A viscosidade do óleo lubrificante do motor refere-se à sua
+              resistência ao fluxo e é crucial para o desempenho do motor. 0W-20
+              Óleo de baixa viscosidade, ideal para climas frios, facilita
+              partidas a frio e melhora a eficiência de combustível em motores
+              modernos. 5W-20 Semelhante ao 0W-20, mas ligeiramente mais espesso
+              em altas temperaturas. Também é bom para climas frios e eficiência
+              de combustível. 5W-30 Oferece um equilíbrio entre proteção em
+              altas temperaturas e eficiência em climas frios. É amplamente
+              usado em diferentes tipos de veículos. 10W-30 Um pouco mais
+              espesso em baixas temperaturas que o 5W-30, adequado para climas
+              moderados e oferece boa proteção em altas temperaturas. 10W-40
+              Proporciona maior proteção em altas temperaturas, ideal para
+              climas mais quentes e motores que operam sob condições mais
+              severas. 15W-40 Comum em motores a diesel, oferece boa proteção em
+              altas temperaturas e é adequado para climas quentes. 20W-50 Óleo
+              de alta viscosidade, ideal para climas quentes e motores mais
+              antigos ou com alto desgaste, oferecendo proteção robusta em altas
+              temperaturas. Cada tipo de óleo é projetado para condições
+              específicas de temperatura e operação, e a escolha deve seguir as
+              recomendações do fabricante do veículo.
+            </p>
+            <button class="btn-close" onclick="toggleInfo(6)">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review" id="review">
+      <h2 class="title">Nossos <span>Clientes</span></h2>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/quote-img.png" alt="comentario" />
+          <p>
+            Ótimo Trabalho, gostei muito atendeu a todas as minhas
+            expectativas...
+          </p>
+          <img src="./img/pic-1.png" alt="foto-cliente" class="user" />
+          <h3>Vinicius Souza</h3>
+          <div class="stars">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+              alt="star-half-empty"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/quote-img.png" alt="comentario" />
+          <p>Adorei o serviço muito caprichoso e atencioso...</p>
+          <img src="./img/pic-2.png" alt="foto-cliente" class="user" />
+          <h3>Amanda Zorzan</h3>
+          <div class="stars">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+              alt="star-half-empty"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/quote-img.png" alt="comentario" />
+          <p>
+            Muito bom o trabalho profissional com experiência e muito
+            dedicado...
+          </p>
+          <img src="./img/pic-3.png" alt="foto-cliente" class="user" />
+          <h3>Arnaldo Minholi</h3>
+          <div class="stars">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+              alt="star-half-empty"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="address" id="address">
+      <h2 class="title">Nosso <span>Endereço</span></h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.249974947813!2d-51.36828332582275!3d-20.902260269317683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9490cb5bbb038da3%3A0x1838cb287efdc55e!2sOficina%20do%20Bad%C3%B4!5e0!3m2!1spt-BR!2sbr!4v1728575662688!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="footer">
+      <div class="share">
+        <a href="http://www.instagram.com/victordebrito91/" target="_blank"
+          ><img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"
+            alt="instagram-new"
+        /></a>
+        <a
+          href="http://facebook.com/joaovictor.oliveirabrito/?locale=pt_BR"
+          target="_blank"
+          ><img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"
+            alt="facebook-new"
+        /></a>
+        <img
+          width="30"
+          height="30"
+          src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter--v1.png"
+          alt="twitter--v1"
+        />
+      </div>
+    </section>
+  </body>
+</html>
